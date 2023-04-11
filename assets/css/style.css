@@ -1,0 +1,22 @@
+#daysoftheweek {
+    padding:5px;
+    border:solid;
+}
+
+.day {
+    display: flex;
+    padding:5px;
+    margin:5px;
+}
+
+.weekday {
+    border:solid;
+    padding: 5px;
+    width:10%;
+    text-align:center;
+}
+
+.input {
+    margin-left:10px;
+    width:90%;
+}
