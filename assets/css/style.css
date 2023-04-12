@@ -31,11 +31,14 @@ header {
     margin-left:10px;
     width:90%;
     
-#test {
+}
 
+#test {
+    padding: 50px;
+    margin-right: 35%;
+    margin-left: 35%;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-around;
 
 }
 
@@ -43,10 +46,8 @@ header {
 #save {
     padding: 20px;
     font-size: 30px;
-    position: fixed;
-	right: 41%;
-	top:50%;
-    width: 200px;
+   
+    
     border-radius: 4px;
     border-color: black;
     border-width: 3px;
@@ -56,10 +57,8 @@ header {
 #reset {
     padding: 20px;
     font-size: 30px;
-    position: fixed;
-	left: 41%;
-	top:50%;
-    width: 200px;
+
+    
     border-radius: 4px;
     border-color: black;
     border-width: 3px;
