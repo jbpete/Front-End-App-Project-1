@@ -4,11 +4,11 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    font-size: 30px;
 }
 
 
 
-=======
 #daysoftheweek {
     padding:5px;
     border:solid;
@@ -30,7 +30,7 @@ header {
 .input {
     margin-left:10px;
     width:90%;
-    
+}
 #test {
 
     display: flex;
