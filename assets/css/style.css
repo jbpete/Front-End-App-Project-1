@@ -1,0 +1,33 @@
+#test {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+
+#save {
+    padding: 20px;
+    font-size: 30px;
+    position: fixed;
+	right: 41%;
+	top:50%;
+    width: 200px;
+    border-radius: 4px;
+    border-color: black;
+    border-width: 3px;
+    
+}
+
+#reset {
+    padding: 20px;
+    font-size: 30px;
+    position: fixed;
+	left: 41%;
+	top:50%;
+    width: 200px;
+    border-radius: 4px;
+    border-color: black;
+    border-width: 3px;
+}
