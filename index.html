@@ -8,7 +8,7 @@
     <title>ScratchPad</title>
 </head>
 
-<body>
+<body onload=weatherApi()>
 
     <main>
 
@@ -23,7 +23,10 @@
         <div>
 
             <div id = weather>
-                <p>Weather</p>
+                <p id="city"></p>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
             </div>
 
             <div id = soundcloud>
