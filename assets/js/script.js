@@ -13,3 +13,11 @@ saveButton.addEventListener("click", function(event) {
     localStorage.setItem("journal", JSON.stringify(journal));
     console.log("Hello")
 });
+
+function weatherApi() {
+    var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=indianapolis&appid=f1e9804071ae403822444ebea900347d'
+    fetch(weatherUrl)
+        .then(function(response) {
+            return response.JSON();
+        });
+}
