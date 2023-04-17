@@ -14,6 +14,28 @@ var button6 = document.getElementById("saButton")
 var button7 = document.getElementById("suButton")
 
 
+entry.value = "";
+entry2.value = "";
+entry3.value = "";
+entry4.value = "";
+entry5.value = "";
+entry6.value = "";
+entry7.value = "";
+
+
+
+document.getElementById("entry").innerHTML = localStorage.journal1;
+document.getElementById("entry2").innerHTML = localStorage.journal2;
+document.getElementById("entry3").innerHTML = localStorage.journal3;
+document.getElementById("entry4").innerHTML = localStorage.journal4;
+document.getElementById("entry5").innerHTML = localStorage.journal5;
+document.getElementById("entry6").innerHTML = localStorage.journal6;
+document.getElementById("entry7").innerHTML = localStorage.journal7;
+
+
+
+
+
 console.log(saveButton)
 console.log(clear)
 
@@ -85,7 +107,12 @@ event.preventDefault();
 localStorage.clear();
 
 entry.value = "";
-
+entry2.value = "";
+entry3.value = "";
+entry4.value = "";
+entry5.value = "";
+entry6.value = "";
+entry7.value = "";
 
 });
 
@@ -93,13 +120,22 @@ entry.value = "";
 saveButton.addEventListener("click", function(event) {
     event.preventDefault();
 
-    var journal = {
-        entry: entry.value.trim(),
+    var journal1 = entry.value.trim();
+    var journal2 = entry2.value.trim();
+    var journal3 = entry3.value.trim();
+    var journal4 = entry4.value.trim();
+    var journal5 = entry5.value.trim();
+    var journal6 = entry6.value.trim();
+    var journal7 = entry7.value.trim();
 
-    };
 
-
-    localStorage.setItem("journal", JSON.stringify(journal));
+    localStorage.setItem("journal1", JSON.stringify(journal1));
+    localStorage.setItem("journal2", JSON.stringify(journal2));
+    localStorage.setItem("journal3", JSON.stringify(journal3));
+    localStorage.setItem("journal4", JSON.stringify(journal4));
+    localStorage.setItem("journal5", JSON.stringify(journal5));
+    localStorage.setItem("journal6", JSON.stringify(journal6));
+    localStorage.setItem("journal7", JSON.stringify(journal7));
     console.log("Hello")
 });
 
