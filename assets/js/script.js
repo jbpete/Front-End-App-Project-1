@@ -14,15 +14,6 @@ var button6 = document.getElementById("saButton")
 var button7 = document.getElementById("suButton")
 
 
-entry.value = "";
-entry2.value = "";
-entry3.value = "";
-entry4.value = "";
-entry5.value = "";
-entry6.value = "";
-entry7.value = "";
-
-
 
 document.getElementById("entry").innerHTML = localStorage.journal1;
 document.getElementById("entry2").innerHTML = localStorage.journal2;
