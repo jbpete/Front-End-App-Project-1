@@ -8,7 +8,7 @@
     <title>ScratchPad</title>
 </head>
 
-<body onload=weatherApi()>
+<body onload=weatherApi() onload=randomFact()>
 
     <main>
 
@@ -29,9 +29,7 @@
                 <p id="humidity"></p>
             </div>
 
-            <div id = soundcloud>
-                <p>Soundcloud</p>
-            </div>
+
 
         </div>
 
@@ -42,6 +40,7 @@
                     Monday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="mButton">Random Fact</button>
             </div>
 
             <div class="day" id="tuesday">
@@ -49,6 +48,7 @@
                     Tuesday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="tuButton">Random Fact</button>
             </div>
 
             <div class="day" id="wednesday">
@@ -56,6 +56,7 @@
                     Wednesday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="wButton">Random Fact</button>
             </div>
 
             <div class="day" id="thursday">
@@ -63,6 +64,7 @@
                     Thursday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="thButton">Random Fact</button>
             </div>
 
             <div class="day" id="friday">
@@ -70,6 +72,7 @@
                     Friday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="fButton">Random Fact</button>
             </div>
 
             <div class="day" id="saturday">
@@ -77,6 +80,7 @@
                     Saturday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="saButton">Random Fact</button>
             </div>
 
             <div class="day" id="sunday">
@@ -84,13 +88,26 @@
                     Sunday
                 </h2>
                 <textarea class="input" id="entry"></textarea>
+                <button id="suButton">Random Fact</button>
             </div>
+
+            <div id = "facts">
+                <p id="MondayFact"></p>
+                <p id="TuesdayFact"></p>
+                <p id="WednesdayFact"></p>
+                <p id="ThursdayFact"></p>
+                <p id="FridayFact"></p>
+                <p id="SaturdayFact"></p>
+                <p id="SundayFact"></p>
+            </div>
+
+            
 
         </div>
 
         <div id = "test">
 
-            <button id = "save">
+            <button id = "save" onclick=randomFact()>
                 <p>Save</p>
             </button>
 

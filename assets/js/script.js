@@ -3,8 +3,81 @@ var saveButton = document.getElementById("save");
 
 var clear = document.getElementById("reset");
 
+
+
+var button1 = document.getElementById("mButton")
+var button2 = document.getElementById("tuButton")
+var button3 = document.getElementById("wButton")
+var button4 = document.getElementById("thButton")
+var button5 = document.getElementById("fButton")
+var button6 = document.getElementById("saButton")
+var button7 = document.getElementById("suButton")
+
+
 console.log(saveButton)
 console.log(clear)
+
+function randomFact() {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        var MondayFact = document.getElementById('MondayFact');
+        var TuesdayFact = document.getElementById('TuesdayFact');
+        var WednesdayFact = document.getElementById('WednesdayFact');
+        var ThursdayFact = document.getElementById('ThursdayFact');
+        var FridayFact = document.getElementById('FridayFact');
+        var SaturdayFact = document.getElementById('SaturdayFact');
+        var SundayFact = document.getElementById('SundayFact');
+
+        MondayFact.textContent = data.text
+        TuesdayFact.textContent = data.text
+        WednesdayFact.textContent = data.text
+        ThursdayFact.textContent = data.text
+        FridayFact.textContent = data.text
+        SaturdayFact.textContent = data.text
+        SundayFact.textContent = data.text
+        console.log(data.text)
+    })
+    console.log('Hello')
+    
+    
+
+}
+
+
+
+button1.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var mFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        mFact.textContent = data.text
+    })
+    
+    mButton.remove()
+
+    
+
+   
+    
+    document.getElementById("monday").appendChild(mFact);
+});
+
+
+
+
+
+
+
+
 
 clear.addEventListener("click", function(event){
 console.log(clear)
@@ -49,3 +122,4 @@ function weatherApi() {
         wind.textContent = 'Wind: '+data.wind.speed+' mph';
         humidity.textContent = 'Humidity: '+data.main.humidity+'%';
     })};
+
