@@ -50,6 +50,7 @@ document.getElementById("entry5").innerHTML = localStorage.journal5;
 document.getElementById("entry6").innerHTML = localStorage.journal6;
 document.getElementById("entry7").innerHTML = localStorage.journal7;
 
+//ask eric about empty p tags!
 button1.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var mFact = document.createElement("p")
@@ -68,34 +69,98 @@ button1.addEventListener("click", function(event) {
 
 button2.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
-    var mFact = document.createElement("p")
+    var tuFact = document.createElement("p")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data)
-        mFact.textContent = data.text
+        tuFact.textContent = data.text
     })
     
-    mButton.remove()
-    document.getElementById("monday").appendChild(mFact);
+    tuButton.remove()
+    document.getElementById("tuesday").appendChild(tuFact);
 });
 
 button3.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
-    var mFact = document.createElement("p")
+    var wFact = document.createElement("p")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data)
-        mFact.textContent = data.text
+        wFact.textContent = data.text
     })
     
-    mButton.remove()
-    document.getElementById("monday").appendChild(mFact);
+    wButton.remove()
+    document.getElementById("wednesday").appendChild(wFact);
+});
+
+button4.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var thFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        thFact.textContent = data.text
+    })
+    
+    thButton.remove()
+    document.getElementById("thursday").appendChild(thFact);
+});
+
+button5.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var fFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        fFact.textContent = data.text
+    })
+    
+    fButton.remove()
+    document.getElementById("friday").appendChild(fFact);
+});
+
+button6.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var saFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        saFact.textContent = data.text
+    })
+    
+    saButton.remove()
+    document.getElementById("saturday").appendChild(saFact);
+});
+
+button7.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var suFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        suFact.textContent = data.text
+    })
+    
+    suButton.remove()
+    document.getElementById("sunday").appendChild(suFact);
 });
 
 
