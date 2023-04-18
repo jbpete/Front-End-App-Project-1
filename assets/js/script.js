@@ -1,10 +1,9 @@
+//Calling text areas and basic buttons
 var entry = document.getElementById("entry");
 var saveButton = document.getElementById("save");
-
 var clear = document.getElementById("reset");
 
-
-
+//Fact Button
 var button1 = document.getElementById("mButton")
 var button2 = document.getElementById("tuButton")
 var button3 = document.getElementById("wButton")
@@ -14,14 +13,33 @@ var button6 = document.getElementById("saButton")
 var button7 = document.getElementById("suButton")
 
 
-entry.value = "";
-entry2.value = "";
-entry3.value = "";
-entry4.value = "";
-entry5.value = "";
-entry6.value = "";
-entry7.value = "";
+if (localStorage.journal1 == null) {
+    entry.value = ""
+}
 
+if (localStorage.journal2 == null) {
+    entry2.value = ""
+}
+
+if (localStorage.journal3 == null) {
+    entry3.value = ""
+}
+
+if (localStorage.journal4 == null) {
+    entry4.value = ""
+}
+
+if (localStorage.journal5 == null) {
+    entry5.value = ""
+}
+
+if (localStorage.journal6 == null) {
+    entry6.value = ""
+}
+
+if (localStorage.journal7 == null) {
+    entry7.value = ""
+}
 
 
 document.getElementById("entry").innerHTML = localStorage.journal1;
@@ -31,46 +49,6 @@ document.getElementById("entry4").innerHTML = localStorage.journal4;
 document.getElementById("entry5").innerHTML = localStorage.journal5;
 document.getElementById("entry6").innerHTML = localStorage.journal6;
 document.getElementById("entry7").innerHTML = localStorage.journal7;
-
-
-
-
-
-console.log(saveButton)
-console.log(clear)
-
-function randomFact() {
-    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
-    fetch(factUrl)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data)
-        var MondayFact = document.getElementById('MondayFact');
-        var TuesdayFact = document.getElementById('TuesdayFact');
-        var WednesdayFact = document.getElementById('WednesdayFact');
-        var ThursdayFact = document.getElementById('ThursdayFact');
-        var FridayFact = document.getElementById('FridayFact');
-        var SaturdayFact = document.getElementById('SaturdayFact');
-        var SundayFact = document.getElementById('SundayFact');
-
-        MondayFact.textContent = data.text
-        TuesdayFact.textContent = data.text
-        WednesdayFact.textContent = data.text
-        ThursdayFact.textContent = data.text
-        FridayFact.textContent = data.text
-        SaturdayFact.textContent = data.text
-        SundayFact.textContent = data.text
-        console.log(data.text)
-    })
-    console.log('Hello')
-    
-    
-
-}
-
-
 
 button1.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
@@ -85,16 +63,40 @@ button1.addEventListener("click", function(event) {
     })
     
     mButton.remove()
-
-    
-
-   
-    
     document.getElementById("monday").appendChild(mFact);
 });
 
+button2.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var mFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        mFact.textContent = data.text
+    })
+    
+    mButton.remove()
+    document.getElementById("monday").appendChild(mFact);
+});
 
-
+button3.addEventListener("click", function(event) {
+    var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
+    var mFact = document.createElement("p")
+    fetch(factUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        mFact.textContent = data.text
+    })
+    
+    mButton.remove()
+    document.getElementById("monday").appendChild(mFact);
+});
 
 
 
@@ -127,15 +129,17 @@ saveButton.addEventListener("click", function(event) {
     var journal5 = entry5.value.trim();
     var journal6 = entry6.value.trim();
     var journal7 = entry7.value.trim();
+6
+   
 
 
-    localStorage.setItem("journal1", JSON.stringify(journal1));
-    localStorage.setItem("journal2", JSON.stringify(journal2));
-    localStorage.setItem("journal3", JSON.stringify(journal3));
-    localStorage.setItem("journal4", JSON.stringify(journal4));
-    localStorage.setItem("journal5", JSON.stringify(journal5));
-    localStorage.setItem("journal6", JSON.stringify(journal6));
-    localStorage.setItem("journal7", JSON.stringify(journal7));
+    localStorage.setItem("journal1", journal1);
+    localStorage.setItem("journal2", journal2);
+    localStorage.setItem("journal3", journal3);
+    localStorage.setItem("journal4", journal4);
+    localStorage.setItem("journal5", journal5);
+    localStorage.setItem("journal6", journal6);
+    localStorage.setItem("journal7", journal7);
     console.log("Hello")
 });
 
