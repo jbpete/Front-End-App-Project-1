@@ -81,9 +81,9 @@ h2 {
 
 }
 
-.header {
-    height: 100px;
-    margin-top: 0px;}
+#title {
+    background: rgba(255, 122, 89, .5)
+}
 
 @media screen and (min-width: 480px) {
     .day {
