@@ -54,6 +54,7 @@ document.getElementById("entry7").innerHTML = localStorage.journal7;
 button1.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var mFact = document.createElement("p")
+    mFact.setAttribute("style", "padding:40px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -70,6 +71,7 @@ button1.addEventListener("click", function(event) {
 button2.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var tuFact = document.createElement("p")
+    tuFact.setAttribute("style", "margin-left:40px; margin-top:10px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -86,6 +88,7 @@ button2.addEventListener("click", function(event) {
 button3.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var wFact = document.createElement("p")
+    wFact.setAttribute("style", "padding:40px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -102,6 +105,7 @@ button3.addEventListener("click", function(event) {
 button4.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var thFact = document.createElement("p")
+    thFact.setAttribute("style", "padding:40px;");
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -118,6 +122,7 @@ button4.addEventListener("click", function(event) {
 button5.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var fFact = document.createElement("p")
+    fFact.setAttribute("style", "padding:40px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -134,6 +139,7 @@ button5.addEventListener("click", function(event) {
 button6.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var saFact = document.createElement("p")
+    saFact.setAttribute("style", "padding:40px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();
@@ -150,6 +156,7 @@ button6.addEventListener("click", function(event) {
 button7.addEventListener("click", function(event) {
     var factUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/today'
     var suFact = document.createElement("p")
+    suFact.setAttribute("style", "padding:40px;")
     fetch(factUrl)
     .then(function(response) {
         return response.json();

@@ -70,3 +70,23 @@ header {
     border-color: black;
     border-width: 3px;
 }
+
+h2 {
+    width: 100%;
+
+}
+
+.header {
+    height: 100px;
+    margin-top: 0px;
+  
+    background-image: url(C:\Users\akja1\bootcamp\ScratchPad\background.jpg);
+  }
+
+@media screen and (min-width: 480px) {
+    .day {
+        min-height: 100px;
+        margin-bottom: 10px;
+    }
+
+  }
