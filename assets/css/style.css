@@ -7,8 +7,6 @@ header {
 }
 
 
-
-
 #daysoftheweek {
     padding:5px;
     border:solid;
@@ -78,10 +76,7 @@ h2 {
 
 .header {
     height: 100px;
-    margin-top: 0px;
-  
-    background-image: url(C:\Users\akja1\bootcamp\ScratchPad\background.jpg);
-  }
+    margin-top: 0px;}
 
 @media screen and (min-width: 480px) {
     .day {
