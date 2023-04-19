@@ -16,8 +16,10 @@ In order to better collect my thoughts
 
 # APIs
 
-1. Soundcloud
-2. OpenWeather
+1. Useless Facts - https://uselessfacts.jsph.pl/api/v2/facts/today
+2. OpenWeather - https://api.openweathermap.org/data/2.5/weather?q=indianapolis&appid=f1e9804071ae403822444ebea900347d&units=imperial
 
-#
+# Screenshot
+
+![ScratchpadCapture1](https://user-images.githubusercontent.com/126288123/232939766-c7958c19-405c-4e2a-9686-6e24b0eebab3.PNG)
 
