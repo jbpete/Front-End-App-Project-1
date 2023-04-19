@@ -1,7 +1,7 @@
 # ScratchPad
 
 # Project Description
-ScratchPad is a weekly journaling app that gives temporary space for a busy person to reflect on their past week. They have easy access to the curent date, time, and weather in their area. They can throw on their favorite songs while they write their entries. There entries will stay saved as they return throughout the week. They can reset the entries at the end of the week using the reset button.
+ScratchPad is a weekly journaling app that provides a temporary space for a busy individual to reflect on their ongoing week. Some functionality includes current Indianpolis weather information, space for daily journal entries, and a button to display today's fact. Their entries will stay saved as they return throughout the week. They can reset the entries at the end of the week using the reset button.
 
 # User Story
 
@@ -22,4 +22,8 @@ In order to better collect my thoughts
 # Screenshot
 
 ![ScratchpadCapture1](https://user-images.githubusercontent.com/126288123/232939766-c7958c19-405c-4e2a-9686-6e24b0eebab3.PNG)
+
+# Deployed Page
+
+https://jbpete.github.io/ScratchPad/
 
